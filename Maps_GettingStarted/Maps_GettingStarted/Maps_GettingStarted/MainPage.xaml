@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Maps_GettingStarted"
+             xmlns:maps="clr-namespace:Syncfusion.SfMaps.XForms;assembly=Syncfusion.SfMaps.XForms"
+             x:Class="Maps_GettingStarted.MainPage">
+
+    <maps:SfMaps x:Name="maps" ZoomLevel="10">
+        <maps:SfMaps.Layers >
+            <maps:ImageryLayer 
+                              x:Name="imagerylayer" 
+                              LayerType="OSM" 
+                              ResetOnDoubleTap="False"
+                              GeoCoordinates="50.8088760375977,-1.18579387664795">
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+    </maps:SfMaps>
+</ContentPage>
